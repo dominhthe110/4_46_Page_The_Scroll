@@ -33,23 +33,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdN-8d-qdJ">
-                                <rect key="frame" x="52.5" y="0.0" width="270" height="667"/>
+                                <rect key="frame" x="72.5" y="0.0" width="230" height="667"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="270" id="s8d-OQ-VJe"/>
+                                    <constraint firstAttribute="width" constant="230" id="LZa-kY-QCx"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NdN-8d-qdJ" secondAttribute="bottom" id="1Yj-O3-DqO"/>
+                            <constraint firstItem="NdN-8d-qdJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4MB-Bd-lQt"/>
                             <constraint firstItem="NEm-Hf-frk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4f8-fO-RaB"/>
-                            <constraint firstItem="NdN-8d-qdJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NvG-H8-ocP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bCt-bU-c77" secondAttribute="bottom" id="Wl8-oC-WfK"/>
+                            <constraint firstItem="NdN-8d-qdJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YG7-1Z-z4b"/>
                             <constraint firstItem="bCt-bU-c77" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zrq-zR-iPi"/>
                             <constraint firstItem="bCt-bU-c77" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aMX-Tk-wdZ"/>
-                            <constraint firstItem="NdN-8d-qdJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cas-Tf-pJ7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NEm-Hf-frk" secondAttribute="trailing" constant="12" id="chM-cu-CqJ"/>
-                            <constraint firstItem="NdN-8d-qdJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="djf-5f-0WF"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NdN-8d-qdJ" secondAttribute="bottom" id="rYs-Cr-6AE"/>
                             <constraint firstAttribute="trailing" secondItem="bCt-bU-c77" secondAttribute="trailing" id="uwZ-8M-1dk"/>
                         </constraints>
                     </view>

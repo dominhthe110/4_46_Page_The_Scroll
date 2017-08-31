@@ -18,7 +18,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        view.addGestureRecognizer(scrollView.panGestureRecognizer)
+        
+            }
+    
+    override func viewDidAppear(_ animated: Bool) {
         var contentWidth : CGFloat = 0.0
+        
+        print("Scrollview width \(scrollView.frame.size.width)")
         
         print("Scrollview width: \(scrollView.frame.size.width)")
         
@@ -27,23 +34,21 @@ class ViewController: UIViewController {
             let imageView = UIImageView(image: image)
             images.append(imageView)
             
-            var newX: CGFloat = 0.0
+            var newX : CGFloat = 0.0
             
-            newX = view.frame.midX + view.frame.size.width * CGFloat(x)
+            newX = scrollView.frame.size.width / 2  + scrollView.frame.size.width * CGFloat(x)
             
             contentWidth += newX
             
             scrollView.addSubview(imageView)
             
-            imageView.frame = CGRect(x: newX - 75, y: (view.frame.size.height / 2) - 75, width: 150, height: 150)
+            imageView.frame = CGRect(x: newX - 75, y: -75 + (scrollView.frame.size.height / 2), width: 150, height: 150)
         }
         
-        //scrollView.contentSize = CGSize(width: contentWidth, height: view.frame.size.height)
-        scrollView.backgroundColor = UIColor.lightGray
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
+        scrollView.contentSize = CGSize(width: contentWidth, height: view.frame.size.height)
+        scrollView.clipsToBounds = false
+        //scrollView.backgroundColor = UIColor.lightGray
+
 
     }
 
